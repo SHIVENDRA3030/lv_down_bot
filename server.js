@@ -24,7 +24,7 @@ const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
 bot.start((ctx) => {
-    ctx.reply('puch le jo tujhe puchna hai ');
+    ctx.reply('Hello! How may I assist you today?');
 });
 
 bot.on('text', async (ctx) => {
